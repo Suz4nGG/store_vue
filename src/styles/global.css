@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+
+/*
+custom styles
+*/
+
+@layer base {
+  body {
+    @apply text-gray-500 font-sans font-normal text-xs;
+    color: #6b7280;
+  }
+}
+
+@layer components {
+  .base-title {
+    @apply text-lg font-bold font-display uppercase leading-10 !important;
+  }
+  .input-field {
+    @apply bg-white block w-full sm:text-sm rounded-md py-3 px-1
+        text-gray-500 
+        border-gray-300 border;
+    /* focus:ring-indigo-500 
+        focus:border-indigo-500; */
+  }
+
+  .btn-shape {
+    @apply flex items-center justify-center 
+        px-4 py-3 border border-transparent
+        w-3/5
+        font-display 
+        font-bold
+        uppercase
+        rounded-md 
+        shadow-sm 
+        md:max-w-[15rem]
+        sm:px-8;
+  }
+}
+
+@tailwind utilities;
